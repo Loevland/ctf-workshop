@@ -8,6 +8,7 @@ Flaggformat: `TD{}`
   - [Overflow 2](pwn/overflow2)
 
 - Rev:
+  - [Encryptor](rev/encryptor)
 
 - Web:
 
