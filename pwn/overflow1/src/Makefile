@@ -1,5 +1,5 @@
 overflow1:
-	gcc overflow1.c -fno-stack-protector -o overflow1
+	gcc vuln.c -fno-stack-protector -o vuln
 
 clean:
-	rm -f overflow1
+	rm -f vuln
