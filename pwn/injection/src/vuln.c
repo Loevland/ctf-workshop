@@ -40,7 +40,7 @@ int main(){
         snprintf(buf, bufsize, "%s%s", ls, line);
 
         system(buf);
-        }
+    }
 
     return 0;
 }

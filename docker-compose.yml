@@ -1,0 +1,18 @@
+services:
+  injection:
+    build: ./pwn/injection/src
+    ports:
+      - "9000:9000"
+    restart: on-failure
+
+  overflow1:
+    build: ./pwn/overflow1/src
+    ports:
+      - "9001:9001"
+    restart: on-failure
+
+  overflow2:
+    build: ./pwn/overflow2/src
+    ports:
+      - "9002:9002"
+    restart: on-failure
