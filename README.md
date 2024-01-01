@@ -1,4 +1,4 @@
-# CTF-workshop
+# CTF-Workshop
 
 Flaggformat: `TD{}`
 
@@ -11,6 +11,7 @@ Flaggformat: `TD{}`
   - [Encryptor](rev/encryptor)
 
 - Web:
+  - [Flask admin](web/flask_admin)
 
 - Crypto:
   - [Do u know RSA?](crypto/do_u_know_rsa)
