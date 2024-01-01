@@ -1,4 +1,5 @@
 services:
+  # Pwn
   injection:
     build: ./pwn/injection/src
     ports:
@@ -15,4 +16,11 @@ services:
     build: ./pwn/overflow2/src
     ports:
       - "9002:9002"
+    restart: on-failure
+
+  # Web
+  flask_admin:
+    build: ./web/flask_admin/src
+    ports:
+      - "8000:8000"
     restart: on-failure
