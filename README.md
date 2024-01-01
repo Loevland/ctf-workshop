@@ -3,7 +3,7 @@
 Flaggformat: `TD{}`
 
 - Pwn:
-  - [Overflow 1](pwn(overflow1))
+  - [Overflow 1](pwn/overflow1)
 
 - Rev:
 
