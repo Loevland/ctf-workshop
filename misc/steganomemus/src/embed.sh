@@ -34,4 +34,7 @@ echo
 
 ./solve.sh
 
+# move out of src/
+mv memes ..
+
 cd - > /dev/null

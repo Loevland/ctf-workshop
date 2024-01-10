@@ -3,11 +3,12 @@
 > Misc. - 50pts
 
 Gandalf stoles it from uzzz!
-Pleeeaze heelpz uzzz? *Gollum, GOLLUM*
-Get the flag from level 4's entry message.
-It's the first one mentioning ChatGPT.
+Pleeeaze heelp uzzz?
 
-[Portal to Gandalf](https://gandalf.lakera.ai/)
+*Gollum, GOLLUM*
+
+Find the location we does, the precious location in secret level 4.
+
+[Challenge Gandalf](https://gandalf.lakera.ai/)
 
 Hint 1. Keyword is prompt engineering.
-
