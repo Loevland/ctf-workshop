@@ -13,8 +13,8 @@ Flaggformat: `TD{}`
 
 - Web:
   - [Flask admin](web/flask_admin)
+  - [SQL Injection](web/sql_injection/README.md)
   - [WIP](https://github.com/Loevland/ctf-workshop/issues/6)
-  - [WIP](https://github.com/Loevland/ctf-workshop/issues/5)
 
 - Crypto:
   - [Do u know RSA?](crypto/do_u_know_rsa)

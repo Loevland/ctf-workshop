@@ -24,3 +24,9 @@ services:
     ports:
       - "8000:8000"
     restart: on-failure
+  
+  sql_injection:
+    build: ./web/sql_injection/src
+    ports:
+      - "8001:8001"
+    restart: on-failure
