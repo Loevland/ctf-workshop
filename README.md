@@ -19,7 +19,7 @@ Flaggformat: `TD{}`
 - Crypto:
   - [Do u know RSA?](crypto/do_u_know_rsa)
   - [RSA Factorization](https://github.com/Loevland/ctf-workshop/issues/9)
-  - [XOR](https://github.com/Loevland/ctf-workshop/issues/10)
+  - [Tyrannosaurus rexor](crypto/tyrannosaurus_rexor)
  
 - Misc:
   - [WIP](https://github.com/Loevland/ctf-workshop/issues/7)
