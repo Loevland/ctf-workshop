@@ -55,7 +55,7 @@ The flag is the password, which is `TD{youwillnotguessthispassword!}`.
 
 
 ### Solution 2
-If we run `strings password_checker`, we will see the following string within the binary:
+If we run `strings password_checker`, we will see the following strings in the binary:
 ```
 TD{youw
 illno
