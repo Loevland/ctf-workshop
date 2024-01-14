@@ -9,7 +9,7 @@ Flaggformat: `TD{}`
 
 - Rev:
   - [Encryptor](rev/encryptor)
-  - [Password check](https://github.com/Loevland/ctf-workshop/issues/12)
+  - [Password check](rev/password_check)
 
 - Web:
   - [Flask admin](web/flask_admin)
