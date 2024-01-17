@@ -10,6 +10,7 @@ Flaggformat: `TD{}`
 - Rev:
   - [Encryptor](rev/encryptor)
   - [Password check](rev/password_check)
+  - [Scramblinator](rev/scramblinator)
 
 - Web:
   - [Flask admin](web/flask_admin)
