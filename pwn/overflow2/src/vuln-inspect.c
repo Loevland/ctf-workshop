@@ -57,17 +57,10 @@ int main(){
 void doeit(){
     char name[32];
 
-    // printf("&main := %p \n", main);
-    // printf("&win  := %p \n", win);
-    // printf("rip   := %p (before gets) \n", *(long long**)(name+OFFSET));
-
     printstack(name);
 
     puts("What is your name?");
     gets(name);
-
-    // printf("rip   := %p (after gets) \n", *(long long**)(name+OFFSET));
-    // *(long long**)(name+OFFSET) = (long long*)win;
 
     printstack(name);
 }
