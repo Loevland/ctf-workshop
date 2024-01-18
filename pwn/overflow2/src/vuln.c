@@ -45,15 +45,8 @@ int main(){
 
     char name[32];
 
-    printf("&main := %p \n", main);
-    printf("&win  := %p \n", win);
-    printf("rip   := %p (before gets) \n", *(long long**)(name+40));
-
     puts("What is your name?");
     gets(name);
-
-    printf("rip   := %p (after gets) \n", *(long long**)(name+40));
-    *(long long**)(name+40) = (long long*)win;
 
     return 0;
 }
