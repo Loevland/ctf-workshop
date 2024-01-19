@@ -5,6 +5,21 @@ if [ -z "$padding" ]; then
 	exit 1
 fi
 
+if ! cd $(dirname $BASH_SOURCE); then
+	echo "failed to cd into directory of script - abort"
+	exit 1
+fi
+
+# Create symbolic links to source file dependencies.
+# ln -s ../src/Dockerfile Dockerfile
+cp ../src/Dockerfile -t .
+# ln -s ../src/flag.txt   flag.txt
+cp ../src/flag.txt   -t .
+# ln -s ../src/vuln.c     vuln.c
+cp ../src/vuln.c     -t .
+# ln -s ../src/ynetd      ynetd
+cp ../src/ynetd      -t .
+
 echo "
 ###########################################################################
 ################# 1) vuln-inspect.c ILLUSTRATION EXAMPLE ##################
@@ -63,7 +78,6 @@ echo "
 "
 
 # Compile unedited source code.
-rm vuln
 if ! make overflow 2> /dev/null; then
 	echo "failed to compile vuln - abort"
 	exit 1
@@ -120,3 +134,15 @@ docker ps -a
 
 # Stop service.
 docker stop $id
+
+###########################################################################
+################################# THE END #################################
+###########################################################################
+
+# Remove symbolic links.
+rm Dockerfile
+rm flag.txt
+rm vuln.c
+rm ynetd
+
+cd - > /dev/null
