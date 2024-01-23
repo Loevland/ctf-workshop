@@ -8,6 +8,7 @@ Flaggformat: `TD{}`
   - [Overflow 2](pwn/overflow2)
 
 - Rev:
+  - [Admin](rev/admin)
   - [Encryptor](rev/encryptor)
   - [Password check](rev/password_check)
   - [Scramblinator](rev/scramblinator)

@@ -1,4 +1,4 @@
-overflow1:
+password_check:
 	gcc password_check.c -o password_check
 
 clean:
