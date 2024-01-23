@@ -20,7 +20,7 @@ The following is a depiction of the stack:
 
 Therefore, we need to input at least 41 characters where the 41st one is not `"\0"`, e.g.
 ```bash
-echo "0000111122223333444455556666777788889999aaaa<non-zero-bytes>" | nc <host> 9001
+echo "0000111122223333444455556666777788889999<non-zero-bytes>" | nc <host> 9001
 ```
 
 And this will edit the above table into:
