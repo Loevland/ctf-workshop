@@ -24,6 +24,6 @@ Flaggformat: `TD{}`
   - [Tyrannosaurus rexor](crypto/tyrannosaurus_rexor)
  
 - Misc:
-  - [WIP](https://github.com/Loevland/ctf-workshop/issues/7)
+  - [Hidden](web/hidden)
   - [Gandalf](misc/gandalf)
   - [Steganomemus](misc/steganomemus)

@@ -13,3 +13,4 @@ RUN chmod -R a+rx /home/ctf
 
 USER ctf
 CMD ./ynetd -p 9000 ./vuln
+
