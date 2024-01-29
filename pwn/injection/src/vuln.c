@@ -9,6 +9,7 @@ void ignore_me(){
     setvbuf(stdin, NULL, _IONBF, 0);
     setvbuf(stdout, NULL, _IONBF, 0);
     setvbuf(stderr, NULL, _IONBF, 0);
+    dup2(1,2);
 }
 
 void timeout(int signal){
@@ -31,6 +32,8 @@ int main(){
     size_t nbytes = 0;
     char *line = NULL;
     const char *ls = "ls -al ";
+
+    puts("What do you want to 'ls'?");
 
     while (getline(&line, &nbytes, stdin) != -1) {
         line[strlen(line)-1] = '\0';
