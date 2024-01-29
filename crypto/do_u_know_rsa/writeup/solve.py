@@ -9,4 +9,4 @@ ct = 307698856053310949377766658730951351762792726630236620683180306622008164803
 phi = (p-1)*(q-1)
 d = inverse(e, phi)
 pt = pow(ct, d, n)
-print(long_to_bytes(pt))
+print(long_to_bytes(pt).decode())

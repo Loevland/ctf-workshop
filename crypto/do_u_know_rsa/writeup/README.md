@@ -10,8 +10,5 @@ In RSA `p` and `q` are supposed to be secret, but in this challenge we are given
 
 ```console
 $ python3 solve.py
-b'TD{s3cur3_y0ur_ps_and_qs}'
-```
-```
 TD{s3cur3_y0ur_ps_and_qs}
 ```
