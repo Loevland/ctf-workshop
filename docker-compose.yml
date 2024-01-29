@@ -19,14 +19,20 @@ services:
     restart: on-failure
 
   # Web
-  flask_admin:
-    build: ./web/flask_admin/src
-    ports:
-      - "8000:8000"
-    restart: on-failure
-  
   sql_injection:
     build: ./web/sql_injection/src
     ports:
       - "8001:8001"
+    restart: on-failure
+
+  hidden:
+    build: ./web/hidden/src
+    ports:
+      - "8002:8002"
+    restart: on-failure
+
+  flask_admin:
+    build: ./web/flask_admin/src
+    ports:
+      - "8003:8003"
     restart: on-failure

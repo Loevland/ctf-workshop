@@ -7,6 +7,6 @@ ADD ./templates/ ./templates/
 ADD ./app.py .
 ADD ./flag.txt .
 
-EXPOSE 8000
+EXPOSE 8003
 
 CMD ["python", "-b", "app.py"]
