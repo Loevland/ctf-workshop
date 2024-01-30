@@ -3,7 +3,7 @@
 >
 > I accidentally ran my flag through this program, and now it's all garbled up! Can you help me recover it?
 >
-> I remember that the flag starts with `TD{`, ends with `}`, and only contains lowercase and underscore characters otherwise.
+> I remember that the flag starts with `TD{`, ends with `}`, and only contains lowercase and underscore characters otherwise...
 
 
 ## Writeup
@@ -37,6 +37,10 @@ for i in range(256):
 ```
 
 The script output 20 flags that all are potential flags, but only 1 of them uses words which actually form a sentence.
-```
+
+```console
+$ python3 solve.py
+<...>
 TD{xor_strong_but_not_with_small_key}
+<...>
 ```
