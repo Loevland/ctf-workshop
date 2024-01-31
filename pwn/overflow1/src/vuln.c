@@ -41,7 +41,7 @@ int main(){
     ignore_me_timeout();
 
     char name[32];
-    int admin = 0;
+    long int admin = 0;
 
     puts("What is your name?");
     gets(name);
