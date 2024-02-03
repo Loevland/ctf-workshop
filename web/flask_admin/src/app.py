@@ -2,6 +2,7 @@ from flask import Flask, render_template, session, make_response
 
 app = Flask(__name__)
 app.secret_key = "abc123"
+app.config["SESSION_COOKIE_NAME"] = "flask-admin"
 flag = flag = open("flag.txt", "r").read()
 
 @app.route('/', methods=["GET"])
