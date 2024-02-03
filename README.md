@@ -16,11 +16,11 @@ Flaggformat: `TD{}`
 - Web:
   - [Flask admin](web/flask_admin)
   - [SQL Injection](web/sql_injection/README.md)
-  - [WIP](https://github.com/Loevland/ctf-workshop/issues/6)
+  - [Hidden](web/hidden/README.md)
 
 - Crypto:
   - [Do u know RSA?](crypto/do_u_know_rsa)
-  - [DO u rly know RSA?](crypto/do_u_rly_know_rsa)
+  - [Do u rly know RSA?](crypto/do_u_rly_know_rsa)
   - [Tyrannosaurus rexor](crypto/tyrannosaurus_rexor)
  
 - Misc:
