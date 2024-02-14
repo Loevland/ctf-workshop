@@ -2,7 +2,7 @@
 *Intro to CTF* workshop hosted by *Tromsøstudentenes Dataforening*
 
 ## Flag format
-Flagformat: `TD{}`
+`TD{}`
 
 ## Challenges
 - Pwn:
