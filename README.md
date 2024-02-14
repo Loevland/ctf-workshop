@@ -1,7 +1,10 @@
 # CTF-Workshop
+*Intro to CTF* workshop hosted by *Tromsøstudentenes Dataforening*
 
-Flaggformat: `TD{}`
+## Flag format
+Flagformat: `TD{}`
 
+## Challenges
 - Pwn:
   - [Injection](pwn/injection)
   - [Overflow 1](pwn/overflow1)
@@ -22,7 +25,7 @@ Flaggformat: `TD{}`
   - [Do u know RSA?](crypto/do_u_know_rsa)
   - [Do u rly know RSA?](crypto/do_u_rly_know_rsa)
   - [Tyrannosaurus rexor](crypto/tyrannosaurus_rexor)
- 
+
 - Misc:
   - [Gandalf](misc/gandalf)
   - [Steganomemus](misc/steganomemus)
